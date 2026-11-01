@@ -60,6 +60,7 @@ const StudentPage = () => {
           ))}
         </tbody>
       </table>
+      
     </>
   )
 }

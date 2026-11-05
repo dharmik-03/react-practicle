@@ -22,14 +22,16 @@ const List = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        setQuery()
+
+        console.log(query)
+
     }
 
 
     const product = useSelector((state) => state.inventory.products)
 
 
-    const filter = product.filter((l) => l.search === product.name)
+    const filter = product.filter((l) => l.name.toLowerCase().includes(query.search.toLowerCase()))
 
     return (
 
@@ -45,7 +47,7 @@ const List = () => {
             </form>
 
             <br />
-            {!filter ? "no data found" : <table border={2}>
+            {filter.length !== 0 ? <table border={2}>
                 <thead>
                     <tr>
                         <th>NO</th>
@@ -72,7 +74,7 @@ const List = () => {
                     }
                     )}
                 </tbody>
-            </table>}
+            </table> : "no data found"}
         </>
     )
 }

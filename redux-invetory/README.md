@@ -1,16 +1,102 @@
-# React + Vite
+# Inventory Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple and interactive **Inventory Management System** built using React.js and Redux. This project demonstrates the fundamentals of state management in React, including adding, displaying, searching, editing, and deleting inventory products.
 
-Currently, two official plugins are available:
+## 📌 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The Inventory Management System allows users to manage product records through a simple user interface. Users can add products with details such as name, price, quantity, and category, and manage existing products using the available actions.
 
-## React Compiler
+The main objective of this project is to understand how Redux manages application state and how React components interact with a centralized store.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the Oxlint configuration
+- **Add Products:** Add new inventory items with product name, price, quantity, and category.
+- **Display Products:** View all available inventory products in a structured table.
+- **Search Products:** Search for products using the search functionality.
+- **Edit Products:** Update the details of existing inventory items.
+- **Delete Products:** Remove products from the inventory.
+- **Category Selection:** Assign categories to products.
+- **Redux State Management:** Manage inventory data through a centralized Redux store.
+- **Dynamic UI Updates:** Automatically update the product list when inventory data changes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| React.js | Frontend development |
+| Redux | Centralized state management |
+| JavaScript | Application logic |
+| HTML5 | Page structure |
+| CSS3 | Basic styling |
+| npm | Package management |
+
+## 📂 Project Functionality
+
+### 1. Add Product
+Users can enter the following product information:
+- Product Name
+- Product Price
+- Product Quantity
+- Product Category
+
+After entering the details, clicking the **Add** button adds the product to the inventory.
+
+### 2. Product Listing
+All inventory products are displayed in a table containing:
+
+| Field | Description |
+|---|---|
+| NO | Product serial number |
+| Name | Product name |
+| Price | Product price |
+| Qty | Available quantity |
+| Category | Product category |
+| Actions | Edit and Delete options |
+
+### 3. Search Product
+Users can search for products using the search input field to find specific inventory items.
+
+### 4. Edit Product
+The Edit action allows users to modify the details of an existing product.
+
+### 5. Delete Product
+The Delete action removes the selected product from the inventory list.
+
+## ⚙️ Redux State Management
+
+Redux is used to maintain and manage the inventory data centrally.
+
+The application follows the Redux state management approach:
+
+1. **Store:** Holds the application inventory state.
+2. **Actions:** Define operations such as adding, editing, deleting, and searching products.
+3. **Reducers:** Handle actions and return updated state.
+4. **Dispatch:** Sends actions to the Redux store.
+5. **Components:** Access and update application state through Redux.
+
+This approach helps maintain predictable and organized application state.
+
+
+
+## 🎯 Learning Objectives
+
+Through this practical project, I gained hands-on experience with:
+
+- Building reusable React components.
+- Understanding Redux architecture.
+- Managing centralized application state.
+- Using actions and reducers.
+- Connecting React components with Redux.
+- Implementing CRUD (Create, Read, Update, Delete) operations.
+- Handling user input and form data.
+- Implementing basic product search functionality.
+- Updating UI dynamically based on state changes.
+
+## 📸 Project Preview
+
+The application provides a simple inventory dashboard with a product input form, search functionality, and a product listing table with Edit and Delete actions.
+
+## 👨‍💻 Author
+
+**Dharmik**
+

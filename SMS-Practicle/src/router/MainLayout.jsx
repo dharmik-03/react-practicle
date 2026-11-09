@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { Navbars } from "../ui/navbars"
 import { Outlet } from 'react-router-dom'
 
+
 const MainLayout = () => {
     return (
         <Container>

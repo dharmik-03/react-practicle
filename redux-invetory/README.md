@@ -9,6 +9,7 @@ The Inventory Management System allows users to manage product records through a
 The main objective of this project is to understand how Redux manages application state and how React components interact with a centralized store.
 
 
+
 ## ✨ Features
 
 - **Add Products:** Add new inventory items with product name, price, quantity, and category.
